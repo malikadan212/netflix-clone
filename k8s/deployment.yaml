@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: netflix-deployment
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,7 @@ spec:
         app: netflix
     spec:
       containers:
-        - name: netflix
-          image: malikadan212/netflix:latest
-          ports:
-            - containerPort: 3000
+      - name: netflix
+        image: malikadan212/netflix:latest
+        ports:
+        - containerPort: 3000
