@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: netflix
-          image: malikadan212/netflix:latest
+          image: 22i1000/netflix:latest
           ports:
             - containerPort: 3000
