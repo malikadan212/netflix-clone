@@ -14,7 +14,7 @@ spec:
         app: netflix
     spec:
       containers:
-      - name: netflix
-        image: malikadan212/netflix:latest
-        ports:
-        - containerPort: 3000
+        - name: netflix
+          image: malikadan212/netflix:latest
+          ports:
+            - containerPort: 3000
