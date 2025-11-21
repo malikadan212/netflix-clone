@@ -4,7 +4,7 @@ metadata:
   name: demo-service
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: netflix
   ports:
